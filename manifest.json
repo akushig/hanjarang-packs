@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T14:20:36Z",
+  "generatedAt": "2026-07-26T14:20:38Z",
   "packs": {
     "kla_relations": {
       "version": 1,
@@ -25,6 +25,14 @@
       "sizeBytes": 341569,
       "minAppVersion": "1.7.5",
       "changelog": "한국어문회 어휘뱅크 초기 팩"
+    },
+    "daehan_words": {
+      "version": 1,
+      "path": "packs/daehan_words/1/daehan_words.json.gz",
+      "sha256": "85b098f35a66760863767ab766dd8616cd10de788a04148cc64794e6856871c0",
+      "sizeBytes": 302997,
+      "minAppVersion": "1.7.5",
+      "changelog": "대한검정회 어휘뱅크 초기 팩"
     }
   }
 }
