@@ -18,6 +18,7 @@ packs/<packKey>/<version>/<packKey>.json.gz
 {
   "schemaVersion": 1,
   "generatedAt": "2026-07-26T12:00:00Z",
+  "baseUrl": "https://cdn.example/",
   "packs": {
     "kla_relations": {
       "version": 1,
@@ -35,6 +36,11 @@ packs/<packKey>/<version>/<packKey>.json.gz
   되돌리는 것으로 합니다(팩 파일은 지우지 않습니다 — 지난 버전도 경로에 그대로 남습니다).
 - `minAppVersion` 미만의 앱은 그 팩을 무시합니다(구버전 앱이 새 스키마를 못 읽는 사고 방지).
 - `sha256`은 **압축된 `.json.gz` 파일**의 해시입니다.
+- `baseUrl`(선택)이 있으면 앱은 **팩 파일만** 그 주소에서 받습니다. manifest 자체는 계속
+  이 저장소에 머뭅니다. 나중에 팩을 R2·CDN으로 옮길 때 **앱 업데이트 없이** 전환하기 위한
+  우회로입니다 — 베이스 URL이 앱에 박혀 있으면 스토어 심사가 필요하고, 업데이트하지 않은
+  구버전 앱은 영구히 옛 위치를 보게 됩니다. http(s)가 아니면 앱이 무시합니다.
+  설정: `node backend/tools/publish_pack_gh.mjs --set-base-url <URL>` (빈 문자열로 되돌림)
 
 ## 발행 방법
 
