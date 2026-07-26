@@ -1,5 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "1970-01-01T00:00:00Z",
-  "packs": {}
+  "generatedAt": "2026-07-26T13:21:57Z",
+  "packs": {
+    "kla_relations": {
+      "version": 1,
+      "path": "packs/kla_relations/1/kla_relations.json.gz",
+      "sha256": "36857ba3ef2a94db4e94b58226cecc50cfab9770a465a74905ce1dacc07b5fd1",
+      "sizeBytes": 3117,
+      "minAppVersion": "1.7.5",
+      "changelog": "초기 팩 — 유의자·반의자·약자 큐레이션"
+    }
+  }
 }
