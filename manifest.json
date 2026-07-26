@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T13:21:57Z",
+  "generatedAt": "2026-07-26T14:20:32Z",
   "packs": {
     "kla_relations": {
       "version": 1,
@@ -9,6 +9,14 @@
       "sizeBytes": 3117,
       "minAppVersion": "1.7.5",
       "changelog": "초기 팩 — 유의자·반의자·약자 큐레이션"
+    },
+    "qual_hanja": {
+      "version": 1,
+      "path": "packs/qual_hanja/1/qual_hanja.json.gz",
+      "sha256": "e770160b549700bfbb15084f0bac0b67f928e683092e21f22797b03cd4ab703f",
+      "sizeBytes": 774419,
+      "minAppVersion": "1.7.5",
+      "changelog": "기관 배정한자 라이브러리 초기 팩"
     }
   }
 }
