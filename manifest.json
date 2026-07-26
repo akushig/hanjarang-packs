@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T14:20:32Z",
+  "generatedAt": "2026-07-26T14:20:36Z",
   "packs": {
     "kla_relations": {
       "version": 1,
@@ -17,6 +17,14 @@
       "sizeBytes": 774419,
       "minAppVersion": "1.7.5",
       "changelog": "기관 배정한자 라이브러리 초기 팩"
+    },
+    "kla_words": {
+      "version": 1,
+      "path": "packs/kla_words/1/kla_words.json.gz",
+      "sha256": "2e87230cc33bfab847fd8570e8d10f7e611123701d9422f374bcb74f7a3bfb8b",
+      "sizeBytes": 341569,
+      "minAppVersion": "1.7.5",
+      "changelog": "한국어문회 어휘뱅크 초기 팩"
     }
   }
 }
