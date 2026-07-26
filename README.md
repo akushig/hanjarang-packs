@@ -57,12 +57,23 @@ node backend/tools/publish_pack_gh.mjs <packKey> <소스파일> [--changelog "..
 
 | 팩 | 출처 | 라이선스 |
 |---|---|---|
-| `kla_relations`, `daehan_relations` | 한자랑 자체 큐레이션 | 앱과 동일 |
+| `kla_relations`, `daehan_relations` | 한자랑 자체 큐레이션(유의자·반의자·약자) | 앱과 동일 |
+| `qual_hanja` | 각 기관이 공개한 급수별 배정한자 목록(한국어문회·대한검정회 등) + 훈음 | 배정한자 목록은 각 기관 공개 자료. 훈음 일부는 libhangul(BSD) |
+| `kla_words`, `daehan_words` | **우리말샘**(국립국어원) 기반 한자어·뜻풀이 + 자체 큐레이션 | **CC BY-SA 2.0 KR** |
 
-> 아래 출처의 데이터를 담은 팩을 추가할 때는 **이 표와 고지 문구를 반드시 함께 갱신**해야
-> 합니다. 앱 안에도 같은 고지가 있습니다(설정 → 정보).
->
-> - 획순 데이터 [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) — **Arphic Public
->   License** (배포 시 고지 의무)
-> - 한국어 훈음 데이터 libhangul — BSD
-> - 우리말샘(국립국어원) 기반 어휘 데이터 — **CC BY-SA 2.0 KR** (출처 표시·동일조건 변경허락)
+### 우리말샘 출처 표시 (CC BY-SA 2.0 KR)
+
+`kla_words`·`daehan_words`에 포함된 한자어 표제·뜻풀이는 국립국어원 **우리말샘**
+(<https://opendict.korean.go.kr>)의 데이터를 가공한 것입니다. 원 저작물의 라이선스인
+[크리에이티브 커먼즈 저작자표시-동일조건변경허락 2.0 대한민국](https://creativecommons.org/licenses/by-sa/2.0/kr/)에
+따라 배포하며, 이 팩을 다시 가공·배포할 때도 같은 조건을 적용해야 합니다.
+
+### 획순 데이터
+
+`packs/` 에는 **획순 데이터를 넣지 않습니다.** 획순은
+[Make Me a Hanzi](https://github.com/skishore/makemeahanzi) 기반이고 **Arphic Public
+License**의 고지 의무가 따르므로, 앱 번들에만 유지합니다(앱 설정 → 정보에 고지가 있습니다).
+앞으로 획순을 팩으로 옮기게 되면 이 문서에 Arphic 고지 전문을 함께 실어야 합니다.
+
+> 새 팩을 추가할 때는 **이 표와 고지 문구를 반드시 함께 갱신**하십시오. 공개 저장소에 올리는
+> 것은 곧 재배포입니다. 앱 안에도 같은 고지가 있습니다(설정 → 정보).
